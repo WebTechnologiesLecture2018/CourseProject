@@ -123,6 +123,116 @@
 					</li>
 				</ul>
 			</div>
+			<div>
+				<h3>HTTP MESSAGE STRUCTURE</h3>
+	<ul>
+		<li>Start-line - A single line that text that describes the request and determine if the request is successful or not.</li>
+		<li>Headers -  An area in which a message request that contains informaation about the body.</li>
+		<li>Body - a.k.a PAYLOAD, Contains a block of data usually a text, html file, image, etc. either request from a client or response from a server.</li>
+	</ul>
+	
+	<center><image src="/CourseProject/images/HTTP_Message_Format.jpg " alt=" " width="500" height="500";></center>
+	<center><p>Image by: <a href="http://sasi-kala.com/blog/rails-internals-series-1">sasi-kala.com</a></p></center>
+	<center><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages">developer.mozilla.com</a></p></center>
+	
+<table border="black";>
+	<tr>
+		<th><h3>STANDARD METHODS</h3></th>
+		<th><h3>METHOD PROPERTIES</h3></th>
+	</tr>
+	<tr>
+		<td>Get - query</td>
+		<td>safe / idempotent / cacheable</td>
+	</tr>
+	<tr>
+		<td>Head - no body, metadata only</td>
+		<td>safe / idempotent / cacheable</td>
+	</tr>
+	<tr>
+		<td>Post - part of the body</td>
+		<td>cacheable</td>
+	</tr>
+	<tr>
+		<td>Put - requests that the enclosed entity be stored under supplied Request-URI</td>
+		<td>idempotent</td>
+	</tr>
+	<tr>
+		<td>Delete - not supported by servers</td>
+		<td>idempotent</td>
+	</tr>
+	<tr>
+		<td>Options - it allows the client to determine the options and requirements associated with the resource</td>
+		<td>safe / idempotent</td>
+	</tr>
+	<tr>
+		<td>Trace - used to invoke a remote loop-back of the request message</td>
+		<td>safe / idempotent</td>
+	</tr>
+	<tr>
+		<td>Connect - establish a tunnel/connection</td>
+		<td> </td>
+	</tr>
+</table>
+
+<h4>Safe Methods</h4>
+	<ul>
+		<li>Read - only</li>
+	</ul>
+<h4>Idempotent Methods</h4>
+	<ul>
+		<li>Effects of multiple request is the same as a single request</li>
+	</ul>
+<h4>Cacheable Methods</h4>
+	<ul>
+		<li>Allowed to store</li>
+	</ul>
+
+<h3>HTTP STATUS CODES</h3>
+<p>1xx: Informational</p>
+	<ul>
+		<li>100 - Continue</li>
+		<li>101 - Switching Protocols</li>
+	</ul>
+<p>2xx: Success</p>
+	<ul>
+		<li>200 - OK</li>
+		<li>201 - Created</li>
+		<li>202 - Accepted</li>
+		<li>203 - Non-authoritative Information</li>
+		<li>204 - No Conten</li>
+		<li>205 - Reset Content</li>
+		<li>206 - Partial Content</li>
+	</ul>
+<p>3xx: Redirection</p>
+	<ul>
+		<li>300 - Multiple Choices</li>
+		<li>301 - Moved Permanently</li>
+		<li>302 - Found</li>
+		<li>303 - See Other</li>
+		<li>304 - Not Modified</li>
+		<li>305 - Use Proxy</li>
+		<li>306 - Unused</li>
+		<li>307 - Temporary Redirect</li>
+	</ul>
+<p>4xx: Client Error</p>
+	<ul>
+		<li>400 - Bad Request</li>
+		<li>401 - Unauthorized</li>
+		<li>402 - Payment Required</li>
+		<li>403 - Forbidden</li>
+		<li>404 - Not Found</li>
+		<li>405 - Method Not Allowed</li>
+	</ul>
+<p>5xx: Server Error</p>
+	<ul>
+		<li>500- Internal Server Error</li>
+		<li>501- Not Implemented</li>
+		<li>502- Bad Gateway</li>
+		<li>503- Service Unavailable</li>
+		<li>504- Gateway Timeout</li>
+		<li>505- HTTP Version Not Supported</li>
+	</ul>
+			</div>
 		</div>	
 	</div>
 </body>
