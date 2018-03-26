@@ -1,0 +1,80 @@
+/* GLOBAL */
+body {
+  font: 16px/1.5 Arial, Helvetica,sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+.data-header {
+	border: 5px solid #0000ff;
+	width: 100%;
+	height: 100px;
+}
+
+/* NAV */
+.data-nav {
+	border: 5px solid #663300;
+	width: 20%;
+	height: 6975px;
+	box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+	float: left;
+}
+
+
+/* BODY */
+.data-body {
+	border: 5px solid #993399;
+	width: 80%;
+	height: 6975px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* FOOTER */
+.data-footer {
+	border: 5px solid #009933;
+	clear: both;
+	width: 100%;
+	height: 100px;
+}
+
+
+/*######## NAV BAR #######
+
+
+ul.data-nav{
+    background-color: #eee;
+    float: left;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+
+ul.data-nav li a{
+    display: block;
+    border: 1px solid;
+    text-decoration: none;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.data-nav li a:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+ul.topnav li.dropdown{
+    display: none;
+}
+
+
+footer{
+    background-color: dodgerblue;
+
+}
+
+*/
