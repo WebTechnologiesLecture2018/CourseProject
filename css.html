@@ -13,19 +13,83 @@
         <div class="css-body">
         </div>
                 <div class="css">
+					<h1>CSS (Cascading StyleSheet)</h1>
+					<p>CSS was developed by Hakom Wium Lie and Bert Bos. This is a language used to 
+					specify the presentation aspects of structurally marked up documents. This language 
+					can be applied to any XML document and is applicable to rendering in speech, or on media.. 
+					This can be used for describing the presentation of a document written in a markup language. 
+					Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML.</p>
+			
                 </div>
                 <div class="css-statements">
+					<h1>CSS STATEMENTS</h1>
+					<p>CSS Rules Set - A rule set is a statements that tells browsers how to render particular 
+					elements on an HTML page. It consists of a selector followed by a declaration block.</p>
+					
+					<p>CSS Rule Precedence - an HTML element may be the subject of the selectors of multiple stylesheets. 
+					when such values target different properties, their effects cascade and when the styles involve the same property, they conflict.</p>
+					
+					<p>CALCULATING A SELECTOR’S SPECIFICITY
+						<ul>
+							<li>1. Important rules override normal rules.</li>
+							<li>2. Count the number of ID selectors in the selector. (=a)</li>
+							<li>3. Count the number of class selectors, attribute selectors and pseudo-classes in the selector. (=b)</li>
+							<li>4. Count the number of type selectors and pseudo-elements in the selector. (=c)</li>
+							<li>5. Ignore the universal selector.
+						</ul>
+					</p>
                 </div>
-                <div class="css-selectors">
+                <div class="css-selectorsCombinator">
+					<h1>CSS Selectors and Combinators</h1>
+					<p>Selector – structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector.</p>
+					
+					<p>Selector syntax: Chain of one or more sequences of simple selectors.
+						<ul>
+							<li>- Not separated by combinators.</li>
+							<li>- Always start with type/universal selector.</li>
+						</ul>
+					</p>
+					
+					
+					<p>Selector group - comma-separated list of selector.</p>
+					<p>ex. Representing the union of all elements selected by each of the selectors in the list.</p>
+					<p>h1, h2, h3</p>
+					<p>:link, :visited</p>
+					<p>ull. h1, p</p>
+					<ul>
+						<li>Example:</li>
+						<li><img src="images/example1.JPG"><br></li>
+					</ul>
+					<p>Combinators - are used to impose additional matching constraints.</p>
+					<ul>
+						<li>Example:</li>
+						<li><img src="images/example2.JPG"><br></li>
+						<li>Descendant combinatory - Nodes that are children or children of children and so on of specified element are selected.</li>
+						<li>Child combinatory - Nodes that are children of element specified are selected.</li>
+					</ul>
                 </div>
                 <div class="css-declarations">
+					<h1>CSS Declarations</h1>
+					<p>The origin of a declaration is based on where it comes from and it’s importance is whether or not it is declared ‘important’.</p>
+					<ul>
+						<li>Transition Declaration</li>
+						<li>Important User- Agent Declaration</li>
+						<li>Important User Declaration</li>
+						<li>Important override Declaration</li>
+						<li>Important author Declaration</li>
+						<li>Animation</li>
+						<li>Normal override Declaration</li>
+						<li>Normal author Declaration</li>
+						<li>Normal user Declaration</li>
+						<li>Normal user agent Declaration</li>
+					</ul>
                 </div>
                 <div class="css-properties">
                 </div>
                 <div class="css-values">
-                </div>
-                <div class="css-selectors">
-                </div>        
+                </div> 
+				<div class="javascript">
+                </div> 
     </div>
     </body>
 </html>
