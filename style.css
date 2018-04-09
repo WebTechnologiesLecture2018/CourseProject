@@ -7,54 +7,28 @@ body, html {
   height: 100%;
 }
 
-div, nav {
+div, nav, button{
   padding: 0;
   margin: 0;
   display: block;
 }
 
-.data-container {
-  margin-left: 170px;
+div.data-container, div.css-container {
+  margin-left: 250px;
 }
 
 /* HEADER */
 .data-header {
-	border: 5px solid #0000ff;
 	height: 100px;
-<<<<<<< HEAD
   padding: 0;
   margin: 0;
-=======
-    	padding: 0;
-    	margin: 0;
->>>>>>> 902eb512bcc35edc49b2307e4758c3a708e12c99
 }
 
 /* NAV */
-.data-nav {
-	border: 5px solid #663300;
-	width: 170px;
-<<<<<<< HEAD
-  height: 100%;
-	box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-	float: left;
-  position: fixed;
-=======
-	height: 100%;
-	box-sizing: border-box;
-    	text-decoration: none;
-    	list-style: none;
-	float: left;
-    	position: fixed;
->>>>>>> 902eb512bcc35edc49b2307e4758c3a708e12c99
-}
 
 
 /* BODY */
-.data-body {
-	border: 5px solid #993399;
+.data-body, .css-body {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
@@ -72,7 +46,7 @@ div, nav {
 	font-size: 25px;
 	font-weight: bold;
 	color: white;
-	margin-left: 5%;	
+	margin-left: 5%;
 }
 
 #footer-content2 {
@@ -92,40 +66,74 @@ div, nav {
 
 
 
-/*######## NAV BAR #######
-
-
-ul.data-nav{
-    background-color: #eee;
-    float: left;
-    width: 300px;
-    margin: 0;
-    padding: 0;
-    float: left;
+/*######## NAV BAR #######*/
+nav {
+  width: 250px;
+  margin: 0;
+  height: 100%;
+  position: fixed;
+  background-color: #eee;
 }
 
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
 
-ul.data-nav li a{
-    display: block;
-    border: 1px solid;
-    text-decoration: none;
-    padding: 14px;
-    text-transform: uppercase;
-    color: #666;
+ul.data-nav li {
+  list-style: none;
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+ul.data-nav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
 }
 
 ul.data-nav li a:hover {
-    background-color: dodgerblue;
-    color: white;
-}
-ul.topnav li.dropdown{
-    display: none;
+  background: #0080ff;
+  color: white;
 }
 
+ul.data-nav li.dropdownIcon {
+  display: none;
+}
 
 footer{
     background-color: dodgerblue;
 
 }
 
-*/
+
+button {
+	display: block;
+	width: 100%;
+	height: 75px;
+	background-color: lightblue;
+	font-size: 25px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.css,
+.css-statements,
+.css-selectorsCombinator,
+.css-declarations,
+.css-properties,
+.css-values,
+.javascript {
+	display: none;
+	text-align: left;
+	padding: 20px;
+	font-size: 25px;
+	color: gray;
+	font-family: Tahoma, Geneva, sans-serif;
+}
