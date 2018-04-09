@@ -1,8 +1,66 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel ="stylesheet" type="text/css" href="style.css"/>
+        <link rel ="stylesheet" type="text/css" href="css.css">
         <title>Cascading Style Sheet</title> 
+		<script>
+			function show1() {
+				var a = document.getElementById("div1");
+				if (a.style.display === "none") {
+					a.style.display = "block";
+				} else {
+					a.style.display = "none";
+				}
+			}
+			function show2() {
+				var b = document.getElementById("div2");
+				if (b.style.display === "none") {
+					b.style.display = "block";
+				} else {
+					b.style.display = "none";
+				}
+			}
+			function show3() {
+				var c = document.getElementById("div3");
+				if (c.style.display === "none") {
+					c.style.display = "block";
+				} else {
+					c.style.display = "none";
+				}
+			}
+			function show4() {
+				var d = document.getElementById("div4");
+				if (d.style.display === "none") {
+					d.style.display = "block";
+				} else {
+					d.style.display = "none";
+				}
+			}
+			function show5() {
+				var e = document.getElementById("div5");
+				if (e.style.display === "none") {
+					e.style.display = "block";
+				} else {
+					e.style.display = "none";
+				}
+			}
+			function show6() {
+				var f = document.getElementById("div6");
+				if (f.style.display === "none") {
+					f.style.display = "block";
+				} else {
+					f.style.display = "none";
+				}
+			}
+			function show7() {
+				var g = document.getElementById("div7");
+				if (g.style.display === "none") {
+					g.style.display = "block";
+				} else {
+					g.style.display = "none";
+				}
+			}
+		</script>
     </head>
 
     <body>
@@ -12,7 +70,8 @@
         </div>     
         <div class="css-body">
         </div>
-                <div class="css">
+				<button onclick="show1()">CSS</button>
+                <div class="css" id="div1">
 					<h1>CSS (Cascading StyleSheet)</h1>
 					<p>“CSS is one of the core languages of the open web and is standardized across browsers according 
 					to the W3C specification” -developer.mozilla.org. It was developed by Håkon Wium Lie Bert Bos. 
@@ -20,7 +79,9 @@
 					engaging webpages, user interfaces for web applications, and user interfaces for many mobile</p>
 			
                 </div>
-                <div class="css-statements">
+				
+				<button onclick="show2()">CSS Statements</button>
+                <div class="css-statements" id="div2">
 					<h1>CSS STATEMENTS</h1>
 					<p>CSS Rules Set - A rule set is a statements that tells browsers how to render particular 
 					elements on an HTML page. It consists of a selector followed by a declaration block.</p>
@@ -38,7 +99,9 @@
 						</ul>
 					</p>
                 </div>
-                <div class="css-selectorsCombinator">
+				
+				<button onclick="show3()">CSS Selectors and Combinators</button>
+                <div class="css-selectorsCombinator" id="div3">
 					<h1>CSS Selectors and Combinators</h1>
 					<p>Selector – structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector.</p>
 					
@@ -67,7 +130,9 @@
 						<li>Child combinatory - Nodes that are children of element specified are selected.</li>
 					</ul>
                 </div>
-                <div class="css-declarations">
+                
+				<button onclick="show4()">CSS Declarations</button>
+				<div class="css-declarations" id="div4">
 					<h1>CSS Declarations</h1>
 					<p>The origin of a declaration is based on where it comes from and it’s importance is whether or not it is declared ‘important’.</p>
 					<ul>
@@ -83,11 +148,23 @@
 						<li>Normal user agent Declaration</li>
 					</ul>
                 </div>
-                <div class="css-properties">
+                
+				<button onclick="show5()">CSS Properties</button>
+				<div class="css-properties" id="div5">
+					<h1>CSS Properties</h1>
+					<p>In Progress...</p>
                 </div>
-                <div class="css-values">
+                
+				<button onclick="show6()">CSS Values</button>
+				<div class="css-values" id="div6">
+					<h1>CSS Values</h1>
+					<p>In Progress...</p>
                 </div> 
-				<div class="javascript">
+				
+				<button onclick="show7()">JavaScript</button>
+				<div class="javascript" id="div7">
+					<h1>JavaScript</h1>
+					<p>In Progress...</p>
                 </div> 
     </div>
     </body>
