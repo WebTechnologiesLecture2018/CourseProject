@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel ="stylesheet" type="text/css" href="style.css"/>
+		<script src="script.js" type="text/javascript"></script>
 		<title>Course Website</title>
 	</head>
+	
 	<body>
 		<nav>
 			<ul class="data-nav">
@@ -17,28 +19,35 @@
 				<li><a href="#ABOUT">ABOUT</a></li>
 		 	</ul>
 		</nav>
+		
 		<div class="data-container">
 			<div class="data-header">
+			<h1>Web Systems and Technologies</h1>
 			</div>
 			<div class="data-body">
 				<div class="data-web">
+					<button onclick="showWWW()">What is the World Wide Web?</button>
 					<div id="WWW" class="data-web1">
 						<h3>What is the World Wide Web?</h3>
-              <ul>
-					    	<li>The World Wide Web also known as “WWW” is a collection of web resources and application which can access resources via the internet.</li>
-                <li>Combination of all resources and users on the Internet that are using the Hypertext Transfer Protocol</li>
-            	</ul>
+						<ul>
+							<li>The World Wide Web also known as “WWW” is a collection of web resources and application which can access resources via the internet.</li>
+							<li>Combination of all resources and users on the Internet that are using the Hypertext Transfer Protocol</li>
+						</ul>
 					</div>
-					<div class="data-web2">
+					
+					<button onclick="showBirth()">The Birth of the World Wide Web</button>
+					<div id="birth" class="data-web2">
 						<h3>The Birth of the World Wide Web</h3>
-            	<ul>
-					   		<li>The World Wide Web was invented at CERN by Tim Berners-Lee in the year 1989. It started when Tim noticed that they were having difficulties in sharing information. That’s why Tim developed the www for them to share information between scientists in universities and institutes around the world. He also suggested that you could actually link the text in the files themselves.</li>
-					   		<li>Instead of reading one research paper at a time, you could just display part of another paper that holds directly relevant text. The documentations of a specific mathematical nature would be represented as a ‘web’ of information which is held in electronic form on computers across the world. Tim thought that is could be done by using a hypertext, linking documents together by using buttons on the screen, where you can just simply click on to jump from one paper to another.</li>
-              </ul>
+						<ul>
+							<li>The World Wide Web was invented at CERN by Tim Berners-Lee in the year 1989. It started when Tim noticed that they were having difficulties in sharing information. That’s why Tim developed the www for them to share information between scientists in universities and institutes around the world. He also suggested that you could actually link the text in the files themselves.</li>
+							<li>Instead of reading one research paper at a time, you could just display part of another paper that holds directly relevant text. The documentations of a specific mathematical nature would be represented as a ‘web’ of information which is held in electronic form on computers across the world. Tim thought that is could be done by using a hypertext, linking documents together by using buttons on the screen, where you can just simply click on to jump from one paper to another.</li>
+						</ul>
 					</div>
 				</div>
+				
 				<div class="data-internet">
-					<div class="data-internet1">
+					<button onclick="showInternet()">THE INTERNET</button>
+					<div id="internet" class="data-internet1">
 						<h3>THE INTERNET (INTERNETWORK)</h3>
 							<ul>
 								<li>Interconnected computer network on a global scale, that shares information and resources.</li>
@@ -65,10 +74,12 @@
 							</ul>
 					</div>
 				</div>
+				
 				<div class="data-http">
 					<div class="data-http1">
 					</div>
-					<div class="data-http2">
+					<button onclick="showHttpVer()">HTTP Versions</button>
+					<div id="httpVer" class="data-http2">
 						<h3>HTTP Versions</h3>
 						<ul>
 							<li><h4>HTTP 0.9</h4>
@@ -99,7 +110,8 @@
 								</ul></li>
 						</ul>
 					</div>
-					<div id= "HTTP" class="data-hhtp3">
+					<button onclick="showHttp()">What is HTTP?</button>
+					<div id="HTTP" class="data-hhtp3">
 						<h3>What is HTTP?</h3>
 						<ul>
 							<li>HTTP is a stateless communication protocol.</li>
@@ -120,7 +132,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class="data-http-resource">
+				
+				<button onclick="showResourceAdd()">HTTP RESOURCE ADDRESSING</button>
+				<div id="resourceAdd" class="data-http-resource">
 					<h3>HTTP RESOURCE ADDRESSING</h3>
 					<p>HTTP Resources are identified using URLs (RFC 3986) or more specifically, HTTP URLs</p>
 					<ul>
@@ -155,8 +169,8 @@
 					</ul>
 				</div>
 
-
-				<div class="data-http-message">
+				<button onclick="showHttpMessage()">HTTP MESSAGE: REQUEST AND RESPONSE</button>
+				<div id="httpMessage" class="data-http-message">
 					<h3>HTTP MESSAGE: REQUEST AND RESPONSE</h3>
 					<p>
 						HTTP message is a blocks of data that is sent by client to the server and vice versa. There are two kinds of HTTP message namely request and response message.
@@ -175,8 +189,8 @@
 					</ul>
 				</div>
 
-
-				<div class="data-http-message-structure">
+				<button onclick="showMesStruc()">HTTP MESSAGE STRUCTURE</button>
+				<div id="mesStruc" class="data-http-message-structure">
 					<h3>HTTP MESSAGE STRUCTURE</h3>
 					<ul>
 						<li>Start-line - A single line that text that describes the request and determine if the request is successful or not.</li>
@@ -187,7 +201,7 @@
 					<center><image src="images/HTTP_Message_Format.jpg" alt=" " width="500" height="500";></image></center>
 					<center><p>Image by: <a href="http://sasi-kala.com/blog/rails-internals-series-1">sasi-kala.com</a></p></center>
 					<center><p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages">developer.mozilla.com</a></p></center>
-
+					<center>
 					<table border="black";>
 						<tr>
 							<th><h3>STANDARD METHODS</h3></th>
@@ -226,7 +240,7 @@
 							<td> </td>
 						</tr>
 					</table>
-
+					</center>
 					<h4>Safe Methods</h4>
 						<ul>
 							<li>Read - only</li>
@@ -287,8 +301,8 @@
 						</ul>
 				</div>
 
-
-				<div id="HTML" class="data-html">
+				<button onclick="showHTML()">HTML</button>
+				<div id="html" class="data-html">
 					<h3>HTML</h3>
 					<ul>
 						<li>Application of SGML</li>
@@ -302,8 +316,8 @@
 					</ul>
 				</div>
 
-
-				<div class="data-WHATWG">
+				<button onclick="showWHATWG()">WHATWG</button>
+				<div id="whatwg" class="data-WHATWG">
 					<h3>Web Hypertext Application Technology Working Group (WHATWG)</h3>
 					<p>
 						An organization that maintains and develops HTML.
@@ -319,8 +333,8 @@
 					</p>
 				</div>
 
-
-				<div class="data-xhtml">
+				<button onclick="showXHTML()">XHTML</button>
+				<div id="xhtml" class="data-xhtml">
 					<h3>EXTENSIBLE HYPERTEXT MARKUP LANGUAGE (XHTML)</h3>
 					<ul>
 						<li>Reformulation of HTML</li>
@@ -331,7 +345,9 @@
 						<li>It can support wide range of applications</li>
 					</ul>
 				</div>
-				<div class="data-html-headers">
+				
+				<button onclick="showHeaders()">HEADERS</button>
+				<div id="headers" class="data-html-headers">
 					<h3>HEADERS</h3>
 					<ul>
 						<li><h3>General Headers</h3>

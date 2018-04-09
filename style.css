@@ -1,38 +1,56 @@
 /* GLOBAL */
 body, html {
-  font: 16px/1.5 Arial, Helvetica,sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: gray;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 
-div, nav, button{
-  padding: 0;
-  margin: 0;
-  display: block;
+div, nav, button {
+	padding: 0;
+	margin: 0;
+	display: block;
 }
 
 div.data-container, div.css-container {
-  margin-left: 250px;
+	margin-left: 250px;
 }
 
 /* HEADER */
 .data-header {
 	height: 100px;
-  padding: 0;
-  margin: 0;
+	padding-top: 12px;
+	padding-left: 30px;
+	margin: 0;
+	background-color: #303030;
 }
 
 /* NAV */
-
 
 /* BODY */
 .data-body, .css-body {
 	width: 100%;
 	height: 100%;
+	padding: 20px;
 	box-sizing: border-box;
 	float: left;
+}
+
+#WWW, 
+#birth, 
+#internet, 
+#httpVer, 
+#HTTP, 
+#resourceAdd, 
+#httpMessage, 
+#mesStruc,
+#html, 
+#whatwg, 
+#xhtml, 
+#headers {
+	display: none;
 }
 
 /* FOOTER */
@@ -60,67 +78,62 @@ div.data-container, div.css-container {
 	float: right;
 	margin-right: 5%;
 	color: white;
-	font-sie: 20px;
-
+	font-size: 20px;
 }
-
-
 
 /*######## NAV BAR #######*/
 nav {
-  width: 250px;
-  margin: 0;
-  height: 100%;
-  position: fixed;
-  background-color: #eee;
+	width: 250px;
+	margin: 0;
+	height: 100%;
+	position: fixed;
+	background-color: #eee;
 }
 
 nav ul {
-  background-color: #eee;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+	background-color: #eee;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 ul.data-nav li {
-  list-style: none;
-  float: left;
-  display: block;
-  width: 100%;
+	list-style: none;
+	float: left;
+	display: block;
+	width: 100%;
 }
 
 ul.data-nav li a {
-  display: block;
-  text-decoration: none;
-  min-height: 16px;
-  text-align: center;
-  padding: 14px;
-  text-transform: uppercase;
-  color: #666;
+	display: block;
+	text-decoration: none;
+	min-height: 16px;
+	text-align: center;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #666;
 }
 
 ul.data-nav li a:hover {
-  background: #0080ff;
-  color: white;
+	background: #0080ff;
+	color: white;
 }
 
 ul.data-nav li.dropdownIcon {
-  display: none;
+	display: none;
 }
 
 footer{
-    background-color: dodgerblue;
-
+	background-color: dodgerblue;
 }
 
-
+/*CSS Topics and JavaScript*/
 button {
 	display: block;
 	width: 100%;
 	height: 75px;
 	background-color: lightblue;
 	font-size: 25px;
-	font-family: Tahoma, Geneva, sans-serif;
 }
 
 .css,
@@ -134,6 +147,10 @@ button {
 	text-align: left;
 	padding: 20px;
 	font-size: 25px;
-	color: gray;
-	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/***************************/
+
+#WWW {
+	dispaly: none;
 }
