@@ -152,19 +152,318 @@
 				<button onclick="show5()">CSS Properties</button>
 				<div class="css-properties" id="div5">
 					<h1>CSS Properties</h1>
-					<p>In Progress...</p>
+					<h2 id="text">Text Properties</h2>
+						<table>
+						  <tbody>
+						<tr>
+						    <th width=25%>Property</th>
+				    		<th width=25%>Description</th>
+				    		<th width=25%>Values</th>
+						  </tr>
+						  <tr>
+						    <td>color</td>
+						    <td>Sets the color of a text</td>
+						    <td>RGB, hex, keyword</td>
+						  </tr>
+						  <tr>
+						    <td>line-height</td>
+						    <td>Sets the distance between lines</td>
+						    <td>normal, <i>number, length, %</i></td>
+						  </tr>
+						  <tr>
+						    <td>letter-spacing</td>
+						    <td>Increase or decrease the space between characters</td>
+						    <td>normal, <i>length</i></td>
+						  </tr>
+						  <tr>
+						    <td>text-align</td>
+						    <td>Aligns the text in an element</td>
+						    <td>left, right, center, justify</td>
+						  </tr>
+						  <tr>
+						    <td>text-decoration</td>
+						    <td>Adds decoration to text</td>
+						    <td>none, underline, overline, line-through</td>
+						  </tr>
+						  <tr>
+						    <td>text-indent</td>
+						    <td>Indents the first line of text in an element</td>
+						    <td><i>length, 
+						      %</i></td>
+						  </tr>
+						  <tr>
+						    <td>text-transform</td>
+						    <td>Controls the letters in an element</td>
+						    <td>none, capitalize, uppercase, lowercase</td>
+						  </tr>
+						</tbody>
+						</table>
+
+						<h2 id="list">List Properties</h2>
+
+						<table>
+			  				<tbody><tr>
+			    				<th width=25%>Property</th>
+				    			<th width=25%>Description</th>
+				    			<th width=25%>Values</th>
+			  				</tr>
+			  				<tr>
+			    				<td>list-style</td>
+			    				<td>Sets all the properties for a list in one declaration</td>
+			    				<td><i>list-style-type, list-style-position, list-style-image, 
+								</i>
+			  				</tr>
+			  				<tr>
+			    				<td>list-style-image</td>
+			    				<td>Specifies an image as the list-item marker</td>
+			    				<td>URL, none</td>
+			  				</tr>
+			  				<tr>
+			    				<td>list-style-position</td>
+			    				<td>Specifies where to place the list-item marker</td>
+			    				<td>inside, outside</td>
+			  				</tr>
+			  				<tr>
+			    				<td>list-style-type</td>
+			    				<td>Specifies the type of list-item marker</td>
+			    				<td>none, disc, circle, square, decimal, decimal-leading-zero, <br />
+			      				    armenian, georgian, lower-alpha, upper-alpha, lower-greek, <br />
+			      					lower-latin, upper-latin, lower-roman, upper-roman</td>
+			  				</tr>
+			  				</tbody>
+			  			</table>
+
+		  				<h2 id="border">Border Properties</h2>
+
+						<table>
+		  					<tbody><tr>
+		    					<th width=25%>Property</th>
+				    			<th width=25%>Description</th>
+				    			<th width=25%>Values</th>
+		  					</tr>
+		  					<tr>
+		    					<td>border</td>
+		    					<td>Sets all the border properties in one declaration</td>
+		    					<td><i>border-width, border-style, border-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-bottom</td>
+		    					<td>Sets all the bottom border properties in one declaration</td>
+		    					<td><i>border-bottom-width, border-bottom-style, border-bottom-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-bottom-color</td>
+		    					<td>Sets the color of the bottom border</td>
+		    					<td><i>border-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-bottom-style</td>
+		    					<td>Sets the style of the bottom border</td>
+		    					<td><i>border-style</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-bottom-width</td>
+		    					<td>Sets the width of the bottom border</td>
+		    					<td><i>border-width</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-color</td>
+		    					<td>Sets the color of the four borders</td>
+		    					<td><i>color_name, hex_number, rgb_number, </i>transparent</td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-left</td>
+		    					<td>Sets all the left border properties in one declaration</td>
+		    					<td><i>border-left-width, border-left-style, border-left-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-left-color</td>
+		    					<td>Sets the color of the left border</td>
+		    					<td><i>border-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-left-style</td>
+		    					<td>Sets the style of the left border</td>
+		    					<td><i>border-style</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-left-width</td>
+		    					<td>Sets the width of the left border</td>
+		    					<td><i>border-width</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-right</td>
+		    					<td>Sets all the right border properties in one declaration</td>
+		    					<td><i>border-right-width, border-right-style, border-right-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-right-color</td>
+		    					<td>Sets the color of the right border</td>
+		    					<td><i>border-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-right-style</td>
+		    					<td>Sets the style of the right border</td>
+		    					<td><i>border-style</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-right-width</td>
+		    					<td>Sets the width of the right border</td>
+		    					<td><i>border-width</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-style</td>
+		    					<td>Sets the style of the four borders</td>
+		    					<td>none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset</td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-top</td>
+		    					<td>Sets all the top border properties in one declaration</td>
+		    					<td><i>border-top-width, border-top-style, border-top-color</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-top-color</td>
+		    					<td>Sets the color of the top border</td>
+		    					<td><i>border-color</i></td>
+		 					</tr>
+		  					<tr>
+		    					<td>border-top-style</td>
+		    					<td>Sets the style of the top border</td>
+		    					<td><i>border-style</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-top-width</td>
+		    					<td>Sets the width of the top border</td>
+		    					<td><i>border-width</i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>border-width</td>
+		    					<td>Sets the width of the four borders</td>
+		    					<td>thin, medium, thick, <i>length, </i></td>
+		  					</tr>
+							</tbody>
+							</table>
+
+							<h2 id="font">Font Properties</h2>
+
+							<table>
+		  					<tbody><tr>
+		    					<th width=25%>Property</th>
+				    			<th width=25%>Description</th>
+				    			<th width=25%>Values</th>
+		  					</tr>
+		  					<tr>
+		    					<td>font</td>
+		    					<td>Sets all the font properties in one declaration</td>
+		    					<td><i>font-style, font-variant, font-weight, font-size/line-height, font-family, </i>caption, icon, menu, message-box, small-caption, status-bar</td>
+		  					</tr>
+		  					<tr>
+		    					<td>font-family
+		    					</td>
+		    					<td>Specifies the font family for text</td>
+		    					<td><i>family-name, generic-family, </i></td>
+		  					</tr>
+		  					<tr>
+		    					<td>font-size</td>
+		    					<td>Specifies the font size of text</td>
+		    					<td>xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger<i>, length, % </td>
+		  					</tr>
+		  					<tr>
+		    					<td>font-style</td>
+		    					<td>Specifies the font style for text</td>
+		    					<td>normal, italic, oblique</td>
+		  					</tr>
+		  					<tr>
+		    					<td>font-variant
+		    					</td>
+		    					<td>Specifies whether or not a text should be displayed in a small-caps font</td>
+		    					<td>normal, small-caps</td>
+		  					</tr>
+		  					<tr>
+		    					<td>font-weight</td>
+		    					<td>Specifies the weight of a font</td>
+		    					<td>normal, bold, bolder, lighter, <br/>
+		      						100, 200, 300, 400, 500, 600, 700, 800, 900<br>
+			
+		  					</tr>
+							</tbody>
+							</table>
                 </div>
                 
 				<button onclick="show6()">CSS Values</button>
 				<div class="css-values" id="div6">
 					<h1>CSS Values</h1>
-					<p>In Progress...</p>
+					<p><strong>CSS values</strong> are set against CSS Properties and reside within CSS declaration block, which is a part of the CSS rule / statement.
+					<br>CSS 2.1 allows following types of values : </br>
+					<ul>
+						<li>Integers and real numbers</li> 
+						<li>Lengths </li> 
+						<li>Percentages </li> 
+						<li>URLs and URIs </li> 
+						<li>Counters </li> 
+						<li>Colors </li>
+						<li>Strings </li> 
+					</ul>
+					</p>
+					<h2>Integers and real numbers</h2>
+						<p><strong>Integers and real numbers</strong> can be used as CSS values. When used, they can be preceded by + or - sign. Decimal numbers are also allowed. Used in following CSS properties: <br>
+							<ul>
+								<li>z-index </li>
+								<li>line-height </li> 
+								<li>counter-increment </li>
+								<li>used as CSS color values </li>
+							</ul>
+						</p>
+					<h2>Lengths</h2>
+						<p><strong>Lengths </strong>can be used to specify horizontal or vertical measurements. When used, length is followed immediately by a unit. There should not be any space between the number and the unit. For certain properties, negative lengths are allowed , but for certain properties using a negative value results from an error. Used in following CSS properties: <br>
+							<ul>
+								<li>width </li>
+								<li>margin </li> 
+								<li>padding </li>
+								<li>font-size </li>
+								<li>border-width </li>
+								<li>text-shadow </li>
+							</ul>
+						</p>
+					<h2>Percentages</h2>
+						<p><strong>Percentages</strong> can be used by specifying a number followed by a "%". Used in following CSS properties: <br>
+							<ul>
+								<li>width </li>
+								<li>margin-top </li> 
+								<li>font-size </li>
+							</ul>
+						</p>
+					<h2>URLs and URIs</h2>
+						<p><strong>URLs and URIs</strong> are used as CSS values to point to a resource ( e.g. an image ). The format of a URI value is <strong> url("URL" )</strong>. The quotation around the URL is optional. You can also use Relative URIs. Used in following CSS properties: <br>
+							<ul>
+								<li>background image </li>
+								<li>cursor</li> 
+								<li>list-style </li>
+							</ul>
+						</p>
+					<h2>Counters</h2>
+						<p><strong>Counters</strong> are denoted by case-sensitive identifiers. The format of using counters are counter(counter-identifier). A common example of a counter identifier is per-num. Can be used with most if the element selectors and pseudo selectors.
+						</p>
+					<h2>Colors</h2>
+						<p>A<strong>color</strong> is either a keyword or a numerical RGB specification or a hexadecimal color value. It is used to set the color of the text written within an HTML document. Used in color, background, border or box-shadow are common examples of CSS properties that use colors as a value. Most of the CSS properties accept color as values.
+						</p>
+					<h2>Strings</h2>
+						<p>The format of writing strings may be either with double quotes or with single quotes. Used in most of the CSS properties accept strings as values.
+						</p>
                 </div> 
 				
 				<button onclick="show7()">JavaScript</button>
 				<div class="javascript" id="div7">
 					<h1>JavaScript</h1>
-					<p>In Progress...</p>
+					<p>Event Propagation in JavaScript</p>
+					<ul>
+						<li>Capturing Phase</li>
+							<p>- the event is captured by the outermost element, then propagates inward.</p>
+						<li>Bubbling Phase</li>
+							<p>- the event is captured by the innermost element, then propagates outward.</p>
+						<li>At Target</li>
+							<p>- propagates from the target.</p>
+					</ul>
                 </div> 
     </div>
     </body>
