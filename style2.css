@@ -10,18 +10,22 @@ body, html {
 .data-header {
   padding: 30px;
   text-align: center;
+  background-color: pink;
 }
 
-.navbar > ul > li {
+#navbar > ul > li {
 	display: inline;
 }
 
-.navbar {
+#navbar {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.navbar a {
+#navbar a {
   display: inline;
   color: #f2f2f2;
   text-align: center;
@@ -30,27 +34,21 @@ body, html {
   font-size: 17px;
 }
 
-.navbar a:hover {
+#navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.navbar a.active {
+#navbar a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.data-container {
+	padding: 75px 100px 100px 75px;
+	
 }
 
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.navbar {
-	position: fixed;
-	width: 100%;
+.data-body {
+	margin: 150px auto 0;
 }

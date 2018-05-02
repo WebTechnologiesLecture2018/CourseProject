@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Course Website</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- <link rel ="stylesheet" type="text/css" href="style.css"/> -->
 		<link rel ="stylesheet" type="text/css" href="style2.css"/>
-		<!-- <script src="script.js" type="text/javascript"></script> -->
-		<script>
-			window.onscroll = function() {myFunction()};
-			var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
-			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					navbar.classList.add("sticky")
-				} else {
-					navbar.classList.remove("sticky");
-				}
-			}
-		</script>
-		<title>Course Website</title>
 	</head>
 	
 	<body>
-		<!-- <frameset rows="*,*">
-			<frame src="#data-header"></frame>
-			<frame src="data-container"></frame>
-		</frameset> -->
-		<div class="data-header">
-			<h1>Web Systems and Technologies</h1>
-		</div>
-		<div class="navbar">
+		<center>
+		<div id="navbar">
+			<div class="data-header">
+				<h1>Web Systems and Technologies</h1>
+			</div>
 			<ul>
 				<li><a href="index.html">WWW</a></li>
 				<li><a href="#HTTP">HTTP</a></li>
-				<li><a href="#html">HTML</a><li>
-				<li><a href="#css">CSS</a><li>
+				<li><a href="#html">HTML</a></li>
+				<li><a href="#css">CSS</a></li>
 				<li><a href="#js">JAVASCRIPT</a></li>
 				<li><a href="#OTHERS">OTHERS</a></li>
 				<li><a href="#ABOUT">ABOUT</a></li>
-			</ul>
+			</ul>	
 		</div>
+		</center>
 		<div class="data-container">
 			<div class="data-body">	
 				<!-- PRELIM TOPICS -->
@@ -371,7 +355,7 @@
 					</ul>
 				</div>
 				
-<!-- MIDTERM TOPICS	-->
+				<!-- MIDTERM TOPICS	-->
 				<div class="css" id="css">
 				<h1>CSS (Cascading StyleSheet)</h1>
   				<p>“CSS is one of the core languages of the open web and is standardized across browsers according
@@ -380,7 +364,6 @@
   				engaging webpages, user interfaces for web applications, and user interfaces for many mobile</p>
 				</div>
   		
-				<!-- <button onclick="show2()">CSS Statements</button> -->
 				<div class="css-statements" id="div2">
 					<h1>CSS STATEMENTS</h1>
 					<p>CSS Rules Set - A rule set is a statements that tells browsers how to render particular
@@ -398,7 +381,6 @@
 					</p>
 				</div>
 				
-				<!-- <button onclick="show3()">CSS Selectors and Combinators</button> -->
 				<div class="css-selectorsCombinator" id="div3">
 					<h1>CSS Selectors and Combinators</h1>
 					<p>Selector – structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector.</p>
@@ -426,7 +408,6 @@
 						</ul>
 				</div>
 					
-				<!-- <button onclick="show4()">CSS Declarations</button> -->
 				<div class="css-declarations" id="div4">
 					<h1>CSS Declarations</h1>
 					<p>The origin of a declaration is based on where it comes from and it’s importance is whether or not it is declared ‘important’.</p>
@@ -444,7 +425,6 @@
 						</ul>
 				</div>
 					
-				<!-- <button onclick="show5()">CSS Properties</button> -->
 				<div class="css-properties" id="div5">
 					<h1>CSS Properties</h1>
 					<h2 id="text">Text Properties</h2>
@@ -680,13 +660,12 @@
 							</table>
 				</div>
 				
-				<!-- <button onclick="show6()">CSS Values</button> -->
 				<div class="css-values" id="div6">
 					<h1>CSS Values</h1>
 					<p>
 					<strong>CSS values</strong> are set against CSS Properties and reside within CSS declaration block, which is a part of the CSS rule / statement.
-							<br>CSS 2.1 allows following types of values : </br>
-							<ul>
+						<br>CSS 2.1 allows following types of values : </br>
+						<ul>
 							<li>Integers and real numbers</li>
 							<li>Lengths </li>
 							<li>Percentages </li>
@@ -695,7 +674,7 @@
 							<li>Colors </li>
 							<li>Strings </li>
 						</ul>
-						</p>
+					</p>
 						<h2>Integers and real numbers</h2>
 						<p>
 					<strong>Integers and real numbers</strong> can be used as CSS values. When used, they can be preceded by + or - sign. Decimal numbers are also allowed. Used in following CSS properties: <br>
@@ -744,23 +723,23 @@
 						<p>The format of writing strings may be either with double quotes or with single quotes. Used in most of the CSS properties accept strings as values.</p>
 				</div>
 				
-				<!-- <button onclick="show7()">JavaScript</button> -->
 				<div class="javascript" id="js">
-						<h1>JavaScript</h1>
-						<p>Event Propagation in JavaScript</p>
-						<ul>
-							<li>Capturing Phase</li>
-							<p>- the event is captured by the outermost element, then propagates inward.</p>
-							<li>Bubbling Phase</li>
-							<p>- the event is captured by the innermost element, then propagates outward.</p>
-							<li>At Target</li>
-							<p>- propagates from the target.</p>
-						</ul>
+					<h1>JavaScript</h1>
+					<p>Event Propagation in JavaScript</p>
+					<ul>
+						<li>Capturing Phase</li>
+						<p>- the event is captured by the outermost element, then propagates inward.</p>
+						<li>Bubbling Phase</li>
+						<p>- the event is captured by the innermost element, then propagates outward.</p>
+						<li>At Target</li>
+						<p>- propagates from the target.</p>
+					</ul>
 				</div>
-				
 			</div>
+			
 			<div class="data-footer">
 			</div>
+			
 		</div>
 	</body>
 </html>
